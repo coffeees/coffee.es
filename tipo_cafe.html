@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Imagens/icon_00.png">
+    <title>Coffee.ES</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href='index.html'>
+            <img src="Imagens/icon_01.png"
+            alt="" class="icon">
+        </a>
+        <span class="dropdown">
+            <img src="Imagens/menu.png"
+            alt="" class="menu">
+
+            <div class="dropdown-content_01"> <br>
+                <div>
+                    <button onclick="FontePadrao()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A=</span> <span class="menu_2">| Tamanho original do texto</span> &nbsp;&nbsp;&nbsp;</div> </button> <br>
+                    <button onclick="FonteMaior()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A+</span> <span class="menu_2">| Aumentar tamanho do texto</span> &nbsp;&nbsp;&nbsp;</div> </button>
+                </div>
+                <br>
+            </div>
+        </span>
+    </header>
+
+    <div id="img_01">.</div>
+    <div id="img_02">.</div>
+
+    <div class="esp"></div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="wrapper_coffee">
+
+        <!-- 01 -->
+        <div class="itens_01">
+            <div>  <div class="Topicos">CAFÉ CONILLON</div>
+            <br>
+            <div align="center">
+                <img src="Imagens/Cafe_C.jpg"
+                alt="" class="img_cafe">
+            </div>
+            <br><br>
+
+            Produzido em terras de clima quente<br><br>
+            Custo mais baixo<br><br>
+            Possui quase o dobro de cafeína comparado ao café arábica<br><br>
+            Seu sabor e aroma são mais amargos e marcantes, com menor acidez<br><br>
+                <div class="itens_02" style="color: black;">
+                    Os maiores produtores de café conilon do Espírito Santo são os seguintes municípios:
+                    <ul>
+                        <li>Rio Bananal</li><br>
+                        <li>Vila Valério</li><br>
+                        <li>Jaguaré</li><br>
+                        <li>Nova Venécia</li><br>
+                        <li>Sooretama</li><br>
+                        <li>Linhares</li><br>
+                        <li>São Mateus</li><br>
+                        <li>Pinheiros</li><br>
+                        <li>Governador Lindenberg</li><br>
+                        <li>Boa Esperança</li><br>
+                        <li>Vila Pavão</li><br>
+                        <li>São Gabriel da Palha</li><br>
+                        <li>Colatina</li><br>
+                        <li>Marilândia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="itens_01">
+            <div>  <div class="Topicos">CAFÉ ARÁBICA</div>
+            <br>
+            <div align="center">
+                <img src="Imagens/Cafe_A.jpg"
+                alt="" class="img_cafe">
+            </div>
+            <br><br>
+
+            Produzido em terras frias e montanhosas<br><br>
+            Custo mais alto<br><br>
+            Possui menos cafeína do que o café conilon<br><br>
+            Seu sabor é bem mais puro e suave, sendo mais adocicado e um pouco ácido<br><br>
+                <div class="itens_02" style="color: black;">
+                    Os maiores produtores capixabas de café arábica são os municípios de:
+                    <ul>
+                        <li>Brejetuba</li><br>
+                        <li>Iúna</li><br>
+                        <li>Vargem Alta</li><br>
+                        <li>Ibatiba</li><br>
+                        <li>Muniz Freire</li><br>
+                        <li>Irupi</li><br>
+                        <li>Afonso Claudio</li><br>
+                        <li>Domingos Martins</li><br>
+                        <li>Ibitirama</li><br>
+                        <li>Castelo</li><br>
+                        <li>Mimoso do Sul</li><br>
+                        <li>Santa Teresa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="esp"></div>
+    <div class="esp"></div>
+
+    <div>
+        <footer class="FT00"> <p>2023</p> </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function FontePadrao() {
+          var element = document.body;
+          element.className = "FontePadrao";
+        }
+        function FonteMaior() {
+          var element = document.body;
+          element.className = "FonteMaior";
+        }        
+    </script>
+    
+</body>
+</html>

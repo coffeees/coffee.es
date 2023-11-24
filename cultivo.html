@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Imagens/icon_00.png">
+    <title>Coffee.ES</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href='index.html'>
+            <img src="Imagens/icon_01.png"
+            alt="" class="icon">
+        </a>
+        <span class="dropdown">
+            <img src="Imagens/menu.png"
+            alt="" class="menu">
+
+            <div class="dropdown-content_01"> <br>
+                <div>
+                    <button onclick="FontePadrao()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A=</span> <span class="menu_2">| Tamanho original do texto</span> &nbsp;&nbsp;&nbsp;</div> </button> <br>
+                    <button onclick="FonteMaior()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A+</span> <span class="menu_2">| Aumentar tamanho do texto</span> &nbsp;&nbsp;&nbsp;</div> </button>
+                </div>
+                <br>
+            </div>
+        </span>
+    </header>
+
+    <div id="img_01">.</div>
+    <div id="img_02">.</div>
+
+    <div class="esp"></div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <table>
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">PLANTIO</div>  <br><br>
+                Ao fazer o plantio do café, o recomendado é que sejam feitos buracos de cerca de 30 
+                centímetros de profundidade e com aproximadamente 25 centímetros de largura.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td>
+                <div class="img_cafe_maior I01" align="center"></div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">ESPAÇAMENTO</div>  <br><br>
+                Um fator muito importante a se considerar é o espaçamento. Que se refere à distância entre 
+                cada planta na linha e à distância entrelinhas (que se refere as ruas entre a plantação), para 
+                que nenhuma planta acabe interferindo no desenvolvimento da outra.<br><br>
+                <b>O ESPAÇAMENTO É RESPONSÁVEL POR DEFINIR A POPULAÇÃO DE PLANTAS DA ÁREA</b><br><br>
+                Para saber qual as medidas 
+                mais adequadas para o terreno, e devem ser analisados por um especialista fatores como o clima local, 
+                a declividade da área, se a colheita é manual ou mecanizada.
+                De forma geral, o mais comum é que a distância entre as plantas na linha seja aproximadamente entre 50 cm 
+                a 1 metro, e na entrelinha aproximadamente entre 1,5 m a 4 metros.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td>
+                <div class="img_cafe_maior I02" align="center"></div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">COLHEITA</div>  <br><br>
+                A fase de colheita do café pode ser iniciada quando os grãos atingem a fase madura conhecida como "cereja", 
+                que ocorre quando a coloração da casca dos grãos muda de verde para vermelho ou amarelo, dependendo da variedade.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td>
+                <div class="img_cafe_maior I03" align="center"></div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+    </table>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div>
+        <footer class="FT00"> <p>2023</p> </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function FontePadrao() {
+          var element = document.body;
+          element.className = "FontePadrao";
+        }
+        function FonteMaior() {
+          var element = document.body;
+          element.className = "FonteMaior";
+        }        
+    </script>
+    
+</body>
+</html>

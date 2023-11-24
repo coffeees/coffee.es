@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Imagens/icon_00.png">
+    <title>Coffee.ES</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href='index.html'>
+            <img src="Imagens/icon_01.png"
+            alt="" class="icon">
+        </a>
+        <span class="dropdown">
+            <img src="Imagens/menu.png"
+            alt="" class="menu">
+
+            <div class="dropdown-content_01"> <br>
+                <div>
+                    <button onclick="FontePadrao()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A=</span> <span class="menu_2">| Tamanho original do texto</span> &nbsp;&nbsp;&nbsp;</div> </button> <br>
+                    <button onclick="FonteMaior()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A+</span> <span class="menu_2">| Aumentar tamanho do texto</span> &nbsp;&nbsp;&nbsp;</div> </button>
+                </div>
+                <br>
+            </div>
+        </span>
+    </header>
+
+    <div id="img_01">.</div>
+    <div id="img_02">.</div>
+
+    <div class="esp"></div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <table>
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">MAPEAMENTO DA COLHEITA</div>  <br><br>
+                    Também conhecido como mapa de produtividade, o mapa de colheita é gerado através de recursos tecnológicos, geralmente por 
+                    meio de sensores acoplados em máquinas ou tratores. Objetivamente, o mapa de colheita tem a função de informar o volume de 
+                    produto colhido em cada trecho da lavoura.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr class="esp_tr"></tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">IMPORTÂNCIA</div>  <br><br>
+                    Através do mapeamento da colheita, o agricultor consegue armazenar informações relativas à produtividade, identificar zonas 
+                    de baixo potencial produtivo, criar um histórico de mapas de colheita, assim como coletar dados sobre umidade, elevação, 
+                    velocidade de colheita e perdas de grãos, além de fazer o georreferenciamento desses dados coletados adicionando as 
+                    características da safra colhida.
+                    <br><br>
+                    Para o agricultor, é fundamental identificar as áreas da lavoura que respondem à melhor gestão da tecnologia. Por exemplo, 
+                    algumas áreas de baixo rendimento podem apresentar maior produtividade se as doses de fertilizantes forem corrigidas conforme 
+                    necessidade, enquanto outras áreas com a mesma característica podem ter respostas diferentes em razão da qualidade física, 
+                    química e biológica de solo, isto só é possível ser verificado com o auxílio do mapeamento de colheita.
+                    <br><br>
+                    O mapeamento da colheita mostra detalhes da produtividade das culturas, fornece parâmetros para diagnosticar e corrigir as 
+                    causas do baixo rendimento em algumas áreas do campo e ainda estudar as razões pelas quais o desempenho é maior em pontos 
+                    distintos.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+    </table>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="esp"></div>
+
+    <div>
+        <footer class="FT00"> <p>2023</p> </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function FontePadrao() {
+          var element = document.body;
+          element.className = "FontePadrao";
+        }
+        function FonteMaior() {
+          var element = document.body;
+          element.className = "FonteMaior";
+        }        
+    </script>
+    
+</body>
+</html>

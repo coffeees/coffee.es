@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Imagens/icon_00.png">
+    <title>Coffee.ES</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href='index.html'>
+            <img src="Imagens/icon_01.png"
+            alt="" class="icon">
+        </a>
+        <span class="dropdown">
+            <img src="Imagens/menu.png"
+            alt="" class="menu">
+
+            <div class="dropdown-content_01"> <br>
+                <div>
+                    <button onclick="FontePadrao()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A=</span> <span class="menu_2">| Tamanho original do texto</span> &nbsp;&nbsp;&nbsp;</div> </button> <br>
+                    <button onclick="FonteMaior()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A+</span> <span class="menu_2">| Aumentar tamanho do texto</span> &nbsp;&nbsp;&nbsp;</div> </button>
+                </div>
+                <br>
+            </div>
+        </span>
+    </header>
+
+    <div id="img_01">.</div>
+    <div id="img_02">.</div>
+
+    <div class="esp"></div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="wrapper_T">
+    <div></div>
+    <div class="Topicos">CALCULADORA DE CUSTOS</div>  <br><br>
+    <div></div>
+</div>
+
+<table align="center">
+    <tr>
+        <td>INSUMOS</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n01" value="0" placeholder="Informe um valor" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+    
+    <tr>
+        <td>MÃO DE OBRA</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n02" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>MAQUINÁRIO</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n03" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>COLHEITA E<br>PÓS-COLHEITA</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n04" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>ADMINISTRATIVO</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n05" value="0"  onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>PRÓ-LABORE</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n06" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>JUROS</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n07" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+
+    <tr>
+        <td>DEPRECIAÇÃO<br>ANUAL</td>
+        <td>R$</td>
+        <td>&nbsp;&nbsp;<input type="text" id="n08" value="0" onblur="calcular_custo();  calcular_sacas();"> </td>
+        <td>/ha</td>
+    </tr> <tr style="color:#4F8A8D;opacity: 30%;"><td>___________________</td><td>__</td><td>__________________________</td><td>___</td></tr>
+</table>
+            <br>
+<table align="center" style="background:#4F8A8D;font-weight: bold;color: white;border-radius: 10px;padding: 10px;">
+    <tr>
+        <td>TOTAL DE CUSTOS</td>
+        <td>R$</td>
+        <td class="n_resultado">&nbsp;&nbsp; <span id="n09"></span> </td>
+        <td>/ha</td>
+    </tr> <tr><td>&nbsp;</td></tr>
+
+    <tr>
+        <td>VALOR DA SACA</td>
+        <td>R$</td>
+        <td class="n_numero">&nbsp;&nbsp;<input type="text" id="n10" value="0" onblur="calcular_custo(); calcular_sacas();"> </td>
+        <td>unidade</td>
+    </tr> <tr><td>&nbsp;</td></tr>
+
+    <tr>
+        <td>PRECISA PRODUZIR</td>
+        <td></td>
+        <td class="n_resultado">&nbsp;&nbsp; <span id="n11"></span> </td>
+        <td>sacas /ha</td>
+    </tr>
+</table>
+
+<br>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="esp"></div>
+
+    <div>
+        <footer class="FT00"> <p>2023</p> </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function FontePadrao() {
+          var element = document.body;
+          element.className = "FontePadrao";
+        }
+        function FonteMaior() {
+          var element = document.body;
+          element.className = "FonteMaior";
+        }        
+    </script>
+
+    <script>
+        var n01 = document.querySelector('#n01')
+        var n02 = document.querySelector('#n02')
+        var n03 = document.querySelector('#n03')
+        var n04 = document.querySelector('#n04')
+        var n05 = document.querySelector('#n05')
+        var n06 = document.querySelector('#n06')
+        var n07 = document.querySelector('#n07')
+        var n08 = document.querySelector('#n08')
+        var n09 = document.querySelector('#n09')
+        var n10 = document.querySelector('#n10')
+        var n11 = document.querySelector('#n11')
+
+        function calcular_custo() {
+            n09.innerHTML = parseFloat(n01.value) + parseFloat(n02.value) + parseFloat(n03.value) + parseFloat(n04.value) + parseFloat(n05.value) + parseFloat(n06.value) + parseFloat(n07.value) + parseFloat(n08.value)
+        }
+
+        function calcular_sacas() {
+            n11.innerHTML = ( parseFloat(n01.value) + parseFloat(n02.value) + parseFloat(n03.value) + parseFloat(n04.value) + parseFloat(n05.value) + parseFloat(n06.value) + parseFloat(n07.value) + parseFloat(n08.value) ) / parseFloat(n10.value)
+        }
+        
+    </script>
+    
+</body>
+</html>

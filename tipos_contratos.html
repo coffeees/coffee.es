@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Imagens/icon_00.png">
+    <title>Coffee.ES</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href='index.html'>
+            <img src="Imagens/icon_01.png"
+            alt="" class="icon">
+        </a>
+        <span class="dropdown">
+            <img src="Imagens/menu.png"
+            alt="" class="menu">
+
+            <div class="dropdown-content_01"> <br>
+                <div>
+                    <button onclick="FontePadrao()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A=</span> <span class="menu_2">| Tamanho original do texto</span> &nbsp;&nbsp;&nbsp;</div> </button> <br>
+                    <button onclick="FonteMaior()" class="B_tema"> <div class="menu_seleção">&nbsp;&nbsp;&nbsp; <span class="menu_1">A+</span> <span class="menu_2">| Aumentar tamanho do texto</span> &nbsp;&nbsp;&nbsp;</div> </button>
+                </div>
+                <br>
+            </div>
+        </span>
+    </header>
+
+    <div id="img_01">.</div>
+    <div id="img_02">.</div>
+
+    <div class="esp"></div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <table>
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">CONTRATO DE PARCERIA</div>  <br><br>
+                    Em um contrato de parceria agrícola, o proprietário (parceiro outorgante) cede seu imóvel rural 
+                    para outra pessoa (parceiro outorgado) para que o parceiro outorgado possa trabalhar e cultivar nas terras, 
+                    de forma que ambos os lados <span class="texto_destacado">DIVIDEM OS RISCOS E LUCROS</span> pelo período de duração do contrato.<br><br>
+                    Neste tipo de contrato não existe nenhum valor mensal a ser pago pelo parceiro outorgado para trabalhar nas terras.<br><br>
+                    Sempre que houver vendas de safras o lucro deve ser dividido entre as partes.<br>
+                    Porém quando houver prejuízos, os custos também devem ser divididos entre as partes.<br>
+                    Então existe um risco. Podendo haver ganhos ou perdas para o proprietário.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr class="esp_tr"></tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">CONTRATO DE ARRENDAMENTO</div>  <br><br>
+                    Em um contrato de arrendamento, o proprietário (arrendante) cede seu imóvel rural para outra pessoa (arrendatário) 
+                    para que o arrendatário possa trabalhar e cultivar nas terras. Porém o arrendatário 
+                    <span class="texto_destacado">DEVE PAGAR UM VALOR MENSAL</span> ao proprietário pelo uso da terra pelo período de 
+                    duração do contrato.<br><br>
+                    Neste tipo de contrato não existe nenhuma obrigação de divisão de riscos e lucros. Somente as parcelas mensais.<br>
+                    Porém se o proprietário buscar segurança, este tipo de contrato é mais recomendado por conta de que, se houver um grande 
+                    prejuízo na safra, a responsabilidade de arcar com os custos são somente do arrendatário.<br>
+                    Entretanto, da mesma forma, os lucros pela venda das safras pertencem somente ao arrendatário.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr class="esp_tr"></tr>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+        <tr>
+            <td class="width_td"></td>
+            <td class="itens_01">
+                <div>  <div class="Topicos">CONTRATO DE COMODATO</div>  <br><br>
+                    Este é o tipo mais comum de contrato, onde o proprietário (comodante) cede seu imóvel rural, ou parte dele para outra 
+                    pessoa (comodatário) <span class="texto_destacado">SEM QUE EXISTA CUSTO ALGUM</span>, para que o comodatário possa 
+                    utilizar o imóvel para os fins definidos no contrato, com direitos e obrigações definidos no mesmo.<br><br>
+                    Neste tipo de contrato, apesar de não haver custos pelo imóvel ao comodatário, ainda é vantajoso para o proprietário. 
+                    Pois todas as obrigações, taxas, impostos, manutenções, entre outros, podem ficar sobre responsabilidade do comodatário, 
+                    além do comodatário ter que zelar pela conservação do bem.<br>
+                    Este contrato evita que a terra fique ociosa, para que a terra fique protegida de invasões e desapropriações.
+                </div>
+            </td>
+            <td class="width_td"></td>
+        </tr>
+    </table>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="esp"></div>
+
+    <div>
+        <footer class="FT00"> <p>2023</p> </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function FontePadrao() {
+          var element = document.body;
+          element.className = "FontePadrao";
+        }
+        function FonteMaior() {
+          var element = document.body;
+          element.className = "FonteMaior";
+        }        
+    </script>
+    
+</body>
+</html>
